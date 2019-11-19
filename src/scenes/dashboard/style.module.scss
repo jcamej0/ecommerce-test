@@ -1,0 +1,21 @@
+.container {
+    .header {
+        height: 80px;
+        background-color: #fff;
+    }
+    .sub-container {
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        
+        .sidebar {
+            flex: 1.5;
+            background-color: #2a3f4c;
+        }
+
+        .content {
+            flex: 8;
+            background-color: orange;
+        }
+    }
+}
