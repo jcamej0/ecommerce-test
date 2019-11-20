@@ -6,9 +6,18 @@ const Sidebar = ({ match }) => {
   return (
     <nav className={theme.navigation}>
       <ul>
-
-          <Link to="/dashboard/products" >PRoductos</Link>
-
+			<Link to="/dashboard">
+          <div className={theme['menu-option']}>
+            <i className="material-icons">home</i>
+            <span>INICIO</span>
+          </div>
+        </Link>
+        <Link to="/dashboard/products">
+          <div className={theme['menu-option']}>
+            <i className="material-icons">shopping_cart</i>
+            <span>PRODUCTOS</span>
+          </div>
+        </Link>
       </ul>
     </nav>
   );

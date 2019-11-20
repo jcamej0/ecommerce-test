@@ -1,0 +1,24 @@
+@mixin bp($point) {
+    @if $point == full {
+      @media (min-width: 960px) { @content; }
+    }
+    @else if $point == medium {
+      @media (min-width: 768px)  { @content; }
+    }
+    @else if $point == small {
+      @media (min-width: 500px)  { @content; }
+    }
+  }
+  
+
+.menu-option {
+    color: white;
+    font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em 0;
+    background: #435865;
+}
