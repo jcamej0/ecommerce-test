@@ -20,6 +20,7 @@ const ModalGeneric = ({ isOpen, handleToggleModal, children }) => {
           onRequestClose={handleToggleModal}
           style={customStyles}
           shouldCloseOnOverlayClick={true}
+          ariaHideApp={false}
         >
           {children}
         </Modal>
