@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Modal from 'react-modal';
 
-const ModalGeneric = ({ isOpen, children }) => {
-    const [modalIsOpen, changeModalIsOpen] = useState(false);
+const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };
 
-    const toggleModal = () => {
-        changeModalIsOpen(!modalIsOpen);
-    };
-
+const ModalGeneric = ({ isOpen, handleToggleModal, children }) => {
     return(
         <div>
         <Modal
           isOpen={isOpen}
-          onRequestClose={toggleModal}
+          onRequestClose={handleToggleModal}
+          style={customStyles}
+          shouldCloseOnOverlayClick={true}
         >
           {children}
         </Modal>
