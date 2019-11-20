@@ -1,6 +1,4 @@
 const get = (url, urlParams) => {
-  url = urlParams ? url.replace(":id", {urlParams}) : url;
-
   return fetch(url, {
 		headers: {
       "Content-Type": "application/json",
@@ -10,7 +8,6 @@ const get = (url, urlParams) => {
 };
 
 const post = (url, bodyParams) => {
-	console.log("bodyParams", bodyParams);
   return fetch(url, {
 		method: "POST",
 		headers: {
@@ -21,20 +18,19 @@ const post = (url, bodyParams) => {
 };
 
 const put = (url, bodyParams, urlParams) => {
-  url = urlParams ? url.replace(":id", urlParams) : url;
+  url = urlParams ? `${url}${urlParams}` : url;
 
   return fetch(url, {
 		method: "PUT",
 		headers: {
       "Content-Type": "application/json",
     },
-    body: bodyParams,
+    body: JSON.stringify(bodyParams),
   });
 };
 
 const destroy = (url, urlParams) => {
-  url = urlParams ? url.replace(":id", urlParams) : url;
-
+  url = urlParams ? `${url}${urlParams}` : url;
   return fetch(url, {
     method: "DELETE",
     headers: {
