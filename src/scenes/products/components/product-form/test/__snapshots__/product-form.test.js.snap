@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+<div
+  className="container"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <h1
+      className="form-title create"
+    >
+      Nuevo producto
+    </h1>
+    <label
+      htmlFor="name"
+    >
+      Nombre producto: 
+    </label>
+    <input
+      id="name"
+      maxLength="20"
+      name="name"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="price"
+    >
+      Precio: 
+    </label>
+    <input
+      id="price"
+      maxLength="8"
+      name="price"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="category"
+    >
+      Categoria: 
+    </label>
+    <select
+      id="category"
+      name="category"
+      onChange={[Function]}
+      value="Electrodomesticos"
+    >
+      <option
+        defaultChecked={true}
+      >
+        Electrodomesticos
+      </option>
+      <option>
+        Patinetes
+      </option>
+      <option>
+        Cocina
+      </option>
+      <option>
+        Aspiración
+      </option>
+      <option>
+        Cuidado Personal
+      </option>
+    </select>
+    <div
+      className="rule"
+    />
+    <div
+      className="form-footer"
+    >
+      <button
+        className="button button-green submit"
+      >
+        <span>
+          Agregar producto
+        </span>
+      </button>
+      
+    </div>
+  </form>
+</div>
+`;
+
+exports[`product form render correctly 1`] = `
+<div
+  className="container"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <h1
+      className="form-title create"
+    >
+      Nuevo producto
+    </h1>
+    <label
+      htmlFor="name"
+    >
+      Nombre producto: 
+    </label>
+    <input
+      id="name"
+      maxLength="20"
+      name="name"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="price"
+    >
+      Precio: 
+    </label>
+    <input
+      id="price"
+      maxLength="8"
+      name="price"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="category"
+    >
+      Categoria: 
+    </label>
+    <select
+      id="category"
+      name="category"
+      onChange={[Function]}
+      value="Electrodomesticos"
+    >
+      <option
+        defaultChecked={true}
+      >
+        Electrodomesticos
+      </option>
+      <option>
+        Patinetes
+      </option>
+      <option>
+        Cocina
+      </option>
+      <option>
+        Aspiración
+      </option>
+      <option>
+        Cuidado Personal
+      </option>
+    </select>
+    <div
+      className="rule"
+    />
+    <div
+      className="form-footer"
+    >
+      <Button
+        className="submit"
+        color="green"
+        type="submit"
+      >
+        Agregar producto
+      </Button>
+      
+    </div>
+  </form>
+</div>
+`;
