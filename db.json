@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "patinete",
+      "price": "12",
+      "category": "Patinetes",
+      "id": 1
+    },
+    {
+      "name": "aspiradora",
+      "price": "400",
+      "category": "Aspiración",
+      "id": 2
+    },
+    {
+      "name": "ayudante de cocina",
+      "price": "22",
+      "category": "Electrodomesticos",
+      "id": 3
+    }
+  ]
+}
