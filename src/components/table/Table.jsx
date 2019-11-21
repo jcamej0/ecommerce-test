@@ -272,7 +272,6 @@ export default function EnhancedTable({ itemList, handleDelete, handleEdit }) {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
-  console.log("selected", selected);
   const isSelected = name =>
     selected.findIndex(element => element.name === name) !== -1;
 
@@ -309,7 +308,6 @@ export default function EnhancedTable({ itemList, handleDelete, handleEdit }) {
                 .map((row, index) => {
                   const isItemSelected = isSelected(row.name);
                   const labelId = `enhanced-table-checkbox-${index}`;
-                  console.log("isItemSelected", isItemSelected);
                   return (
                     <TableRow
                       hover
@@ -340,7 +338,7 @@ export default function EnhancedTable({ itemList, handleDelete, handleEdit }) {
                       <TableCell align="left">{row.category}</TableCell>
                       <TableCell align="left">
                         <button onClick={() => handleEdit(row)} style={{cursor: 'pointer'}}>
-                          <i class="material-icons">edit</i>
+                          <i className="material-icons">edit</i>
                         </button>
                       </TableCell>
                     </TableRow>
