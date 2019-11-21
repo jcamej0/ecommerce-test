@@ -80,9 +80,9 @@ const actions = {
 			}
 
 			store.setState({
-				state:{
-					state: productsAfterDeleted,
-				}
+				products: {
+					products: productsAfterDeleted
+				},
 			});
 		} catch(e) {
 
