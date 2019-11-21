@@ -42,12 +42,12 @@
 				flex: 0 1 300px;
 				background-color: #2a3f4c;
 				@include bp (small) {
-					flex: 0 1 300px;  
+					flex: 1;  
 					flex-direction:row;
 					background-color: #2a3f4c;
 				}
 				@include bp (medium) {
-					flex: 0 1 300px;  
+					flex: 1;  
 					flex-direction:row;
 					background-color: #2a3f4c;
 				}

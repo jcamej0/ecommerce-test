@@ -1,16 +1,20 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import Main from "./components/main";
 import Products from "./components/products";
 import theme from "./style.module.scss";
 
 const Dashboard = ({ match }) => {
+
+	const exit = () => {
+		window.location.href = "../";
+	}
   return (
     <div className={theme.container}>
       <div className={theme.header}>
 				<h1>Bienvenido</h1>
-				<div>
+				<div  onClick={exit} style={{cursor: 'pointer'}}>
 				<i className="material-icons">
 					exit_to_app
 				</i>
