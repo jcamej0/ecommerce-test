@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Button from '../../../../../../components/buttons';
 import theme from "./theme.module.scss";
 
 const ProductForm = ({ product, onSubmit }) => {
   const [formValues, setFormValues] = useState({
     name: product ? product.name : "",
     price: product ? product.price : "",
-    category: product ? product.category : "",
+    category: product ? product.category : "Electrodomesticos",
   });
   const [ errorMessage, setErrorMessage ] = useState('');
   
@@ -35,7 +36,6 @@ const ProductForm = ({ product, onSubmit }) => {
       price,
       category,
     } = formValues;
-
     if(!name || !price || !category) {
       setErrorMessage("Debes llenar todos los campos");
       return false;  
@@ -92,9 +92,9 @@ const ProductForm = ({ product, onSubmit }) => {
         </select>
         <div className={theme.rule}></div>
         <div className={theme['form-footer']}>
-          <button type="submit" className={`${theme.submit} ${product ? theme.edit : theme.create}`}>
-            Agregar producto
-          </button>
+          <Button type="submit" color={`${product ? 'orange' : 'green'}`} className={`${theme.submit}`}>
+            {product ? "Editar producto" : "Agregar producto"}
+          </Button>
           { errorMessage &&
             <p className={theme['error-message']}>{errorMessage}</p>
           }
