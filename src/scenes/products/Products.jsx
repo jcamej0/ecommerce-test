@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import useGlobalState from "../../../../state";
-import Modal from "../../../../components/modals";
-import Spinner from "../../../../ui-library/loading-spinner";
+import useGlobalState from "../../state";
+import Modal from "../../components/modals";
+import Spinner from "../../ui-library/loading-spinner";
 import ProductForm from "./components/product-form";
 import ProductList from "./components/product-list";
-import Button from "../../../../components/buttons";
+import Button from "../../components/buttons";
 import theme from "./theme.module.scss";
 
 const Products = () => {

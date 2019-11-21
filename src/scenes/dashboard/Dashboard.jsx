@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import Main from "./components/main";
-import Products from "./components/products";
+import Products from "../products";
 import theme from "./style.module.scss";
 
 const Dashboard = ({ match }) => {
