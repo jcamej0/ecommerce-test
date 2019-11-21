@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from '../../../../../../components/buttons';
+import Button from '../../../../components/buttons';
 import theme from "./theme.module.scss";
 
 const ProductForm = ({ product, onSubmit }) => {
